@@ -645,8 +645,8 @@ export class BrowserPool<
         const promises = [...controllers]
             .filter((controller) => controller.isActive)
             .map(async (controller) => {
-                await (await browser.newBrowserCDPSession()).send('Rebrowser.finishRun');
-                 await controller.close()});
+                await controller.close();
+            });
 
         await Promise.all(promises);
     }

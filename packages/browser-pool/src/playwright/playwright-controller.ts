@@ -131,7 +131,6 @@ export class PlaywrightController extends BrowserController<
     protected async _close(): Promise<void> {
         // @ts-ignore
         await (await this.browser.newBrowserCDPSession()).send('Rebrowser.finishRun');
-
         await this.browser.close();
     }
 
