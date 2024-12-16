@@ -33,7 +33,6 @@
     },
     "homepage": "https://crawlee.dev",
     "scripts": {
-        "postinstall": "npx husky install",
         "prepublishOnly": "turbo run copy",
         "clean": "turbo run clean",
         "build": "turbo run build && node ./scripts/typescript_fixes.mjs",
