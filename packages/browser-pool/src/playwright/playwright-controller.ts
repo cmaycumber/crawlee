@@ -129,10 +129,15 @@ export class PlaywrightController extends BrowserController<
     }
 
     protected async _close(): Promise<void> {
+        // @ts-ignore
+        await (await this.browser.newBrowserCDPSession()).send('Rebrowser.finishRun');
+
         await this.browser.close();
     }
 
     protected async _kill(): Promise<void> {
+        // @ts-ignore
+        await (await this.browser.newBrowserCDPSession()).send('Rebrowser.finishRun');
         // TODO: We need to be absolutely sure the browser dies.
         await this.browser.close(); // Playwright does not have the browser child process attached to normal browser server
     }

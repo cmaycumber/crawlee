@@ -717,6 +717,35 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@crawlee/rebrowser-playwright@workspace:packages/rebrowser-playwright-crawler":
+  version: 0.0.0-use.local
+  resolution: "@crawlee/rebrowser-playwright@workspace:packages/rebrowser-playwright-crawler"
+  dependencies:
+    "@apify/datastructures": "npm:^2.0.0"
+    "@apify/log": "npm:^2.4.0"
+    "@apify/timeout": "npm:^0.3.1"
+    "@crawlee/browser": "npm:3.12.1"
+    "@crawlee/browser-pool": "npm:3.12.1"
+    "@crawlee/core": "npm:3.12.1"
+    "@crawlee/types": "npm:3.12.1"
+    "@crawlee/utils": "npm:3.12.1"
+    cheerio: "npm:1.0.0-rc.12"
+    idcac-playwright: "npm:^0.1.2"
+    jquery: "npm:^3.6.0"
+    lodash.isequal: "npm:^4.5.0"
+    ml-logistic-regression: "npm:^2.0.0"
+    ml-matrix: "npm:^6.11.0"
+    ow: "npm:^0.28.1"
+    string-comparison: "npm:^1.3.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    playwright: "*"
+  peerDependenciesMeta:
+    playwright:
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@crawlee/root@workspace:.":
   version: 0.0.0-use.local
   resolution: "@crawlee/root@workspace:."
